@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block costomcss %}
+<link rel="stylesheet" type='text/css' href="{% static 'css/create.css' %}">
+{% endblock costomcss %}
+
+{% block header %}
+<div class="alert alert-success" role="alert">
+  Todo作成
+</div>
+{% endblock header %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<form action='' method='POST' enctype="multipart/form-data">{% csrf_token %}
+  <div class="input-box">
+    <p>タイトル<input type='text' class='form-input' name='title'></p>
+    <p>内容<textarea class='form-input' name='content'></textarea></p>
+    <p>重要度<select class='select-priority' name='priority'>
+      <option value=" ">選択してください</option>
+      <option value="danger">Q1(重要かつ緊急)</option>
+      <option value="warning">Q2(重要)</option>
+      <option value="info">Q3(緊急)</option>
+    </select></p>
+    <p>期日<input type="text" class="form-control" name="duedate"></p>
+    <input type='submit' class='btn btn-success btn' value='作成する'>
+    <a href="{%url 'list' %}" class="btn btn-primary btn" tabindex="-1" role="button" aria-disabled="true">
+      一覧に戻る</a>
+  </div>
+</form>
+{% else %}
+ログインしてください
+{% endif %}
+
+{% endblock content %}

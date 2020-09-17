@@ -1,0 +1,41 @@
+html,
+body {
+  height: 100%;
+}
+
+.input-box {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 350px;
+  padding: 5px;
+  border-radius: .25rem;
+  background-color: #d6d8d9;
+}
+.form-input  {
+  color: #495057;
+  width: 100%;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.select-priority {
+  color: #495057;
+  height: 30px;
+  width: 100%;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.form-control {
+  color: #495057;
+  height: 30px;
+  width: 100%;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}

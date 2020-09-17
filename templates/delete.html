@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block costomcss %}
+<link rel="stylesheet" type='text/css' href="{% static 'css/delete.css' %}">
+{% endblock costomcss %}
+
+{% block header %}
+<div class="alert alert-success" role="alert">
+  投稿削除
+</div>
+{% endblock header %}
+
+{% block content %}
+<div class="input-box">
+  <form action="" method="POST">{% csrf_token %}
+    <h4>Todoリストを削除しますか？</h4>
+    <input type="submit" value="削除します" class="btn btn-danger btn">
+    <a href="{%url 'list' %}" class="btn btn-primary btn" tabindex="-1" role="button" aria-disabled="true">
+      一覧に戻る</a>
+  </form>
+</div>
+{% endblock content %}

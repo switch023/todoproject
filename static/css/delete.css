@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
+
+.input-box {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 350px;
+  padding: 5px;
+  border-radius: .25rem;
+  background-color: #d6d8d9;
+}

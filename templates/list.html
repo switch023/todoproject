@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block costomcss %}
+<link rel="stylesheet" type='text/css' href="{% static 'css/list.css' %}">
+<script src="{% static 'js/list.js' %}"></script>
+{% endblock costomcss %}
+
+{% block header %}
+<div class="header-box">
+  <h1>MyTodoList</h1>
+  <p><a href="{% url 'logout' %}" class="btn" tabindex="-1" role="button" aria-disabled="true">
+    ログアウト</a></p>
+</div>
+{% endblock header %}
+
+{% block content %}
+<div class="container">
+  {% for item in object_list %}
+  <div class="alert alert-{{ item.priority }}" role="alert">
+    <p>{{ item.title }}</p>
+    <p>期日：{{ item.duedate }}</p>
+    <a href="{%url 'update' item.pk%}" class="btn btn-primary btn" tabindex="-1" role="button" aria-disabled="true">
+      編集</a>
+    <a href="{%url 'delete' item.pk%}" class="btn btn-info btn " tabindex="-1" role="button" aria-disabled="true">
+      削除</a>
+    <a href="{%url 'detail' item.pk%}" class="btn btn-success btn " tabindex="-1" role="button" aria-disabled="true">
+      詳細</a>
+  </div>
+  {% endfor %}
+  <a href="{%url 'create' %}" class="btn btn-primary btn" tabindex="-1" role="button" aria-disabled="true">
+    新規作成</a>
+</div>
+
+{% endblock content %}

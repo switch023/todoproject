@@ -1,0 +1,22 @@
+.header-box {
+  max-width: 100vw;
+  height: 80px;
+  background-color: #d4edda;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+h1 {
+  line-height: 80px;
+  padding-left: 30px;
+  color: black;
+}
+.header-box p {
+  display: inline-block;
+}
+
+.header-box .btn{
+  margin-top: 20px;
+  background-color: #f8d7da;
+  border-color: #f43666;
+}
