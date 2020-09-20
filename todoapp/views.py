@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
@@ -19,7 +20,7 @@ def signupfunc(request):
         return render(request, 'signup.html', {'error':'このユーザーは登録されています'})
       except:
         user = User.objects.create_user(entryname, '', entrypassword)
-        return render(request, 'signup.html')
+        return redirect('login')
   return render(request, 'signup.html')
 
 def loginfunc(request):
