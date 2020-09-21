@@ -25,7 +25,7 @@ SECRET_KEY = 'm6kt1_q=d+qtwkn&nq#*d6oeg22exp^e7qw#!p2l0e99mg#^+^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['45.32.40.26', 'localhost']
 
 
 # Application definition
@@ -76,11 +76,14 @@ WSGI_APPLICATION = 'mytodo.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+'default': {
+'ENGINE': 'django.db.backends.postgresql_psycopg2', 'NAME': '​myproject​',
+'USER': '​myprojectuser​',
+'PASSWORD': '​password​',
+'HOST': 'localhost',
+'PORT': '',
+} }
+
 
 
 # Password validation
@@ -121,9 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
