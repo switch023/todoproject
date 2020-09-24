@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'mytodo.wsgi.application'
 DATABASES = {
     'default': {
     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    'NAME': '​mytodoproject​',
+    'NAME': '​myproject​',
     'USER': '​myprojectuser​',
     'PASSWORD': '​password​',
     'HOST': 'localhost',
