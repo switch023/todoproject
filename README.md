@@ -47,4 +47,4 @@ python/Django/postgreSQL/Github/Vultr/Visual Studio Code
 
 ・個人アプリのpythonのtodoアプリにログイン機能/通知機能の追加する。
 
-・javascriptを用いてchatspaceアプリを動的ページに変更する。
+・javascriptを用いてmytodoアプリを動的ページに変更する。
