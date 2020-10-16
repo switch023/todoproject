@@ -42,3 +42,9 @@ https://gyazo.com/10bf860f15039d9d14aabfcab5f88923
 https://gyazo.com/0bf2780a849e64425880530933fcbe61
   
 ・確認後、ログアウト処理をお願いします。
+
+今後の学習・開発予定
+
+・個人アプリのpythonのtodoアプリにログイン機能/通知機能の追加する。
+
+・javascriptを用いてchatspaceアプリを動的ページに変更する。
