@@ -30,7 +30,7 @@ python/Django/postgreSQL/Github/Vultr/Visual Studio Code
 
 デモ動画
 
-https://gyazo.com/10bf860f15039d9d14aabfcab5f88923
+<a href="https://gyazo.com/10bf860f15039d9d14aabfcab5f88923"><img src="https://i.gyazo.com/10bf860f15039d9d14aabfcab5f88923.gif" alt="Image from Gyazo" width="1000"/></a>
 
 
 ・todoリスト編集方法は以下の手順で確認できます。
@@ -39,7 +39,7 @@ https://gyazo.com/10bf860f15039d9d14aabfcab5f88923
   
 デモ動画
 
-https://gyazo.com/0bf2780a849e64425880530933fcbe61
+<a href="https://gyazo.com/0bf2780a849e64425880530933fcbe61"><img src="https://i.gyazo.com/0bf2780a849e64425880530933fcbe61.gif" alt="Image from Gyazo" width="1000"/></a>
   
 ・確認後、ログアウト処理をお願いします。
 
