@@ -18,6 +18,12 @@ mytodoアプリ
 
 python及びDjangoフレームワークを用いてデプロイ作業の一連の流れを学習するため。
 
+[工夫した点]
+
+最小限の情報のみでtodo登録するところ
+
+todoの重要度に応じて、リストの背景色が変化するところ
+
 [開発環境]
 python/Django/postgreSQL/Github/Vultr/Visual Studio Code
 
